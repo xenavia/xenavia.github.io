@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xenavia TIP</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    body {
+      background: #000000;
+      background-image: url("https://images.pexels.com/photos/30778799/pexels-photo-30778799/free-photo-of-scenic-winter-landscape-of-austrian-alps.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+    }
+    .box {
+      width: 70%;
+      height: 95%;
+      background: rgba(44, 44, 44, 0.7);
+      position: absolute;
+      top: 3%;
+      left: 14%;
+      border-radius: 10px;
+    }
+    .box2 {
+      width: 90%;
+      height: 600px;
+      background: rgba(57, 57, 57, 0.8);
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      border-radius: 10px;
+    }
+    .tab {
+      position: absolute;
+      background: #1e1e1e;
+      width: 20%;
+      height: 5%;
+      border-radius: 20px;
+      text-align: center;
+    }
+    strong.tab {
+      color: #FFFFFF;
+      position: absolute;
+      top: 20%;
+      left: 35%;
+    }
+    strong.tab:hover {
+      color: #d4ffbe;
+    }
+    strong.ntab {
+      color: #FFFFFF;
+    }
+    strong.ntab:hover {
+      color: #d4ffbe;
+    }
+    p.credit {
+      color: #FFFFFF;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+    p.credit:hover {
+      color: #d4ffbe;
+    }
+    p {
+      color: #FFFFFF;
+    }
+    .cbox {
+      position: absolute;
+      bottom: 0px;
+      left: 0%;
+      width: 100%;
+    }
+    h3 {
+      color: #FFFFFF;
+    }
+    h2 {
+      color: #FFFFFF;
+    }
+    h1 {
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+<input type="text" value="monero:48tKEtpHE13Fmduz7TDScrFwPpB79VzVdXrSioPiTkmKVidEMq5mmXbeMoagTeSXRD675zewr52jmDPZ3dGQaGWx7KB386d?tx_amount=0.010000000000&recipient_name=TvSsh&tx_description=%7E3%24/%7E12z%C5%82" id="donateAddress" readonly style="position:absolute; left:-9999px;">
+<input type="text" value="48tKEtpHE13Fmduz7TDScrFwPpB79VzVdXrSioPiTkmKVidEMq5mmXbeMoagTeSXRD675zewr52jmDPZ3dGQaGWx7KB386d" id="walletAddress" readonly style="position:absolute; left:-9999px;">
+<script>
+  function copyWallet() {
+    const walletInput = document.getElementById("walletAddress");
+    walletInput.select();
+    walletInput.setSelectionRange(0, 99999); // dla mobilnych
+    document.execCommand("copy");
+
+    alert("XMR(Monero) donate address copied!");
+  }
+  function copyDonate() {
+    const walletInput = document.getElementById("donateAddress");
+    walletInput.select();
+    walletInput.setSelectionRange(0, 99999); // dla mobilnych
+    document.execCommand("copy");
+
+    alert("XMR(Monero) public address copied!");
+  }
+</script>
+
+
+<a href="https://www.pexels.com/photo/scenic-winter-landscape-of-austrian-alps-30778799/" target="_blank">
+  <div class="cbox">
+    <p class="credit">Photo by Ahmet Yüksek on Pexels</p>
+  </div>
+</a>
+
+
+<div class="box">
+  <a href="/">
+    <div class="tab"><strong class="ntab">Xenavia</strong></div>
+  </a>
+  <a href="/interests.html">
+    <div class="tab" style='left:20%'><strong class="ntab" style="left:25%">Interests</strong></div>
+  </a>
+  <a href="/socials.html">
+    <div class="tab" style='left:40%'><strong class="ntab" style="left:32.5%">Socials</strong></div>
+  </a>
+  <a href="/donate.html">
+    <div class="tab" style='left:60%'><strong class="ntab" style="left:32.5%;color:#adbda2">Tip</strong></div>
+  </a>
+  <a href="/projects.html">
+    <div class="tab" style='left:80%'><strong class="ntab" style="left:30%">Projects</strong></div>
+  </a>
+  <div class="box2" style="height:88%; text-align: center;">
+    <h2>XMR donate options!</h2>
+    <h3>0.01XMR(~3$) QR code donate!</h3>
+    <img src="img/001xmrqrcode.png" width="20%" alt="Around 3$ donate">
+    <h3>XMR wallet/donate address</h3>
+    <a><div class="tab" onclick="copyWallet()" style="height:10%;width:30%;left:20%"><p class="credit" style="left:6%;top:-20%">Copy Wallet Address</p></div></a>
+    <a><div class="tab" onclick="copyDonate()" style="height:10%;width:30%;left:50%"><p class="credit" style="left:6%;top:-20%">Copy Donate Address</p></div></a>
+
+
+    <div class="tab" style="background:rgba(0,0,0,0);top:70%;">
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'H2H31FA1VA');kofiwidget2.draw();</script>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
